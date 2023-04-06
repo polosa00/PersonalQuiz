@@ -37,6 +37,10 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        
+        let answerCount = Float(currentAnswers.count - 1)
+        rangedSlider.maximumValue = answerCount
+        rangedSlider.value = answerCount / 2
     }
 
     // MARK: - IBActions
@@ -58,6 +62,10 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func rangedAnswerButtonPressed() {
+        let index = lrintf(rangedSlider.value)
+        
+        answersChosen.append(currentAnswers[index])
+    performSegue(withIdentifier: "showResult", sender: nil)
     }
 }
 // MARK: - Private Methods
