@@ -41,6 +41,7 @@ class QuestionViewController: UIViewController {
         let answerCount = Float(currentAnswers.count - 1)
         rangedSlider.maximumValue = answerCount
         rangedSlider.value = answerCount / 2
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

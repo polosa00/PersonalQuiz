@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -61,7 +60,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4CG-Fh-rdu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dVq-IM-CIV" secondAttribute="trailing" constant="220" id="1Hp-48-s41"/>
                             <constraint firstItem="l57-ZN-Tai" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LmV-dZ-iwd"/>
@@ -100,7 +99,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ua8-Ss-A46">
-                                <rect key="frame" x="16" y="225.5" width="286" height="117"/>
+                                <rect key="frame" x="16" y="228" width="286" height="112.5"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-ww-e3m">
                                         <rect key="frame" x="-2" y="0.0" width="290" height="31"/>
@@ -123,9 +122,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RME-WK-kdi">
-                                        <rect key="frame" x="0.0" y="82.5" width="286" height="34.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <rect key="frame" x="0.0" y="82.5" width="286" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Ответить"/>
                                         <connections>
                                             <action selector="rangedAnswerButtonPressed" destination="PGb-KR-Y4a" eventType="touchUpInside" id="Mu8-OC-cgF"/>
                                         </connections>
@@ -133,7 +132,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ome-gL-o3u">
-                                <rect key="frame" x="16" y="173" width="288" height="222.5"/>
+                                <rect key="frame" x="16" y="175" width="288" height="218"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ycm-ZM-IXX">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="31"/>
@@ -192,9 +191,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SU-P4-Bfv">
-                                        <rect key="frame" x="0.0" y="188" width="288" height="34.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Ответить"/>
+                                        <rect key="frame" x="0.0" y="188" width="288" height="30"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Ответить"/>
                                         <connections>
                                             <action selector="multipleAnswerButtonPressed" destination="PGb-KR-Y4a" eventType="touchUpInside" id="xCS-oZ-QEx"/>
                                         </connections>
@@ -240,7 +239,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZoE-zY-Q2U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SjO-TI-B6n" firstAttribute="centerY" secondItem="nXb-mV-HRy" secondAttribute="centerY" id="3wK-td-HJ4"/>
                             <constraint firstItem="ZoE-zY-Q2U" firstAttribute="trailing" secondItem="Qga-pl-JJt" secondAttribute="trailing" id="4mj-mp-lQT"/>
@@ -314,7 +313,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AFz-FR-OrF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Huz-jm-LpZ" firstAttribute="centerY" secondItem="eqw-Rp-M0o" secondAttribute="centerY" id="5UE-qB-yaw"/>
                             <constraint firstItem="Huz-jm-LpZ" firstAttribute="leading" secondItem="AFz-FR-OrF" secondAttribute="leading" constant="16" id="N96-vl-ZO9"/>
@@ -357,9 +356,4 @@
             <point key="canvasLocation" x="978.75" y="-19.014084507042252"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
