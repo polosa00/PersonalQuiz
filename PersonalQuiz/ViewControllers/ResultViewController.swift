@@ -51,7 +51,7 @@ final class ResultViewController: UIViewController {
             animalLabel.text =  "Вы - \(Animal.rabbit.rawValue)"
             descriptionLabel.text = Animal.rabbit.definition.description
         } else {
-            animalLabel.text = ""
+            animalLabel.text = "🆘"
             descriptionLabel.text = "Попробуйте еще"
         }
     }
