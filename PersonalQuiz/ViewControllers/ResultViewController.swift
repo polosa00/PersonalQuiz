@@ -39,16 +39,16 @@ final class ResultViewController: UIViewController {
         }
         
         if  catCounter >= 2   {
-            animalLabel.text = " Вы - \(String(Animal.cat.rawValue))"
+            animalLabel.text = " Вы - \(Animal.cat.rawValue)"
             descriptionLabel.text = Animal.cat.definition.description
         } else if dogCounter >= 2 {
-            animalLabel.text = " Вы - \(String(Animal.dog.rawValue))"
+            animalLabel.text = " Вы - \(Animal.dog.rawValue)"
             descriptionLabel.text = Animal.dog.definition.description
         } else if turtleCounter >= 2 {
-            animalLabel.text =  "Вы - \(String(Animal.turtle.rawValue))"
+            animalLabel.text =  "Вы - \(Animal.turtle.rawValue)"
             descriptionLabel.text = Animal.turtle.definition.description
         } else if rabbitCounter >= 2 {
-            animalLabel.text =  "Вы - \(String(Animal.rabbit.rawValue))"
+            animalLabel.text =  "Вы - \(Animal.rabbit.rawValue)"
             descriptionLabel.text = Animal.rabbit.definition.description
         } else {
             animalLabel.text = ""
